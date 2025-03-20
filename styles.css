@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  
+  #welcome{
+    height: 100vh;
+  }
+  
+  #navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #FB8B24;
+    font-family: "Jacques Francois";
+    font-size: 48px;
+    font-style: normal;
+    z-index: 10;
+    padding: 3%;
+    
+  }
+  
+  h1{
+    width: 100%;
+    margin: 0;
+    font-size: 48px;
+    z-index: 10;
+    text-align: center;
+  }
+  
+  .nav-links{
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    text-align: center;
+    font-family: Jost;
+    font-size: 24px;
+    font-style: normal;
+  }
+  
+  .brief{
+    padding-top: 12%;
+    padding-bottom: 2%;
+    background-color: #E36414;
+    width: 100%;
+    margin: 0;
+  }
+  
+  h2 {
+    width: 100%;
+    color: black;
+    text-align: center;
+    font-family: "Source Serif Pro";
+    font-size: 24px;
+    font-style: normal;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #9A031E;
+    padding-bottom: 5%;
+  }
+  
+  .image-container img {
+    height: 405px;
+    margin-top: 15%;
+    border-radius: 40px;
+    border: 4px solid #FFF;
+  }
+  
+  .bio-background {
+    background-color: #5F0F40;
+  }
+  
+  .bio {
+    color: white;
+    text-align: center;
+    font-family: "Inria Serif";
+    font-size: 24px;
+    font-style: normal;
+    margin: 0 auto;
+    margin-bottom: 0;
+    width: 1062px;
+    padding: 5%;
+  }
+  
+  /* projects */
+  
+  h3 { 
+    color: white;
+    text-align: center;
+    font-family: "Jacques Francois";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+    padding: 5%;
+  }
+  
+  #projects {
+    background-color: #0F4C5C;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .websites {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    justify-content: center;
+    justify-items: center;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  
+  .websites img {
+    width: 500px;
+    height: auto;
+  }
+  
+  .illustrations {
+    display: grid;
+    grid-template-columns: repeat(3, auto); 
+    grid-template-rows: auto auto;
+    gap: 60px; 
+    justify-content: center;
+    justify-items: center;
+    padding-bottom: 5%;
+  }
+  
+  .illustrations img {
+    height: auto;
+    max-width: 267px;
+  }
+  
+  footer{
+    background-color: #FB8B24;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 20px;
+  }
+  
+  footer img {
+    width: 70px;
+    height: auto;
+  }
+  
+  footer img:first-child {
+    margin: 0 auto;
+  }
+  
+  
+  
+  /* Tablet View */
+  @media (min-width: 769px) and (max-width: 991px){
+    #navbar {
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      padding: 2%;
+      font-size: 36px;
+    }
+    
+    .image-container {
+      display: flex;
+      flex-direction: column; /* Stack images vertically */
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+  }
